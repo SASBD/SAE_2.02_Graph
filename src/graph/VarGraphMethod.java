@@ -4,6 +4,12 @@ import java.util.*;
 
 public class VarGraphMethod extends GraphMethod<String> implements VarGraph {
 
+    public VarGraphMethod() {
+    }
+
+    public VarGraphMethod(String description) {
+        peupler(description);
+    }
     // Ajoute un sommet vide (sans successeurs)
     @Override
     public void ajouterSommet(String noeud) {
