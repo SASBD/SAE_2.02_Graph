@@ -31,7 +31,7 @@ Groupe 103
 ## 📌 Remarques
 
 - L’interface `Animator` est utilisée uniquement pour l’animation graphique.
-- Multiples tests réalisés avec le fichier `DijkstraTest.java` ainsi que des tests personnels.
+- Multiples tests réalisés avec le fichier `Djikstra.DijkstraTest.java` ainsi que des tests personnels.
 
 ---
 
