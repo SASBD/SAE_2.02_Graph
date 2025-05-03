@@ -1,3 +1,5 @@
+package graph;
+
 // ajouterSommet ne fait rien si un sommet est deja present
 // ajouterArc leve une IllegalArgumentException si l'arc est deja present
 // ajouterArc ajoute les sommets s'ils ne sont pas deja presents

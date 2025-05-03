@@ -1,16 +1,17 @@
-import static org.junit.Assert.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.List;
+import java.util.Stack;
 
 import graph.Graph;
 import graph.GrapheHHAdj;
 import graph.ShortestPath.Distances;
 import graph.VarGraph;
-import org.junit.Test;
 import org.junit.jupiter.api.Test;
 
 class DijkstraTest {
+	private static final String GRAPH1 = "A-B(6), A-C(1), A-D(2), B-E(1), C-E(4), D-B(1), E-F(1)";
+	private static final String GRAPH_NEG = "A-B(6), A-C(1), A-D(2), B-E(-3), C-E(4), D-B(1), E-F(1)"; // B-E negatif !
 	private static final String FROM = "A";
 	private static final String TO = "F"; 
 	private static final int EXPECTED_DIST = 5; 
@@ -20,7 +21,7 @@ class DijkstraTest {
 	@Test
 	void test() {
 		VarGraph g = new GrapheHHAdj();
-		g.peupler("A-B(6), A-C(1), A-D(2), B-E(1), C-E(4), D-B(1), E-F(1)");
+		g.peupler(GRAPH1);
 		tester(g);
 	}
 
@@ -38,8 +39,30 @@ class DijkstraTest {
 	@Test
 	void pasDeValuationNegative() {
 		VarGraph g = new GrapheHHAdj();
-		g.peupler("A-B(6), A-C(1), A-D(2), B-E(-3), C-E(4), D-B(1), E-F(1)"); // B-E negatif !
+		g.peupler(GRAPH_NEG);
 		assertThrows(IllegalArgumentException.class,
 				()->  dijkstra.compute(g, FROM));
+	}
+	@Test
+	void utilisationDuResultat() {
+		 VarGraph g = new GrapheHHAdj();
+		 g.peupler(GRAPH1);
+		 Dijkstra<String> dijkstra = new Dijkstra<String>();
+		 Distances<String> dst = dijkstra.compute(g, FROM);
+		 System.out.println("Graphe : " + g);
+		 System.out.println("Distances de A : " + dst.dist());
+		 System.out.println("Predecesseurs : " + dst.pred());
+		 System.out.println("Distance de " + FROM + " à " + TO + " : " + dst.dist().get(TO));
+		 System.out.print("Chemin de " + FROM + " à " + TO + " : ");
+		 String sommet = TO;
+		 Stack<String> pile = new Stack<>();
+		 while (sommet != null) {
+			 pile.push(sommet);
+			 sommet = dst.pred().get(sommet);
+		 }
+		while(!pile.isEmpty()) {
+			System.out.print(pile.pop() + " ");
+		}
+		 System.out.println();
 	}
 }
