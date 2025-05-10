@@ -57,7 +57,7 @@ class DijkstraTest {
 		 System.out.println("Distance de " + FROM + " à " + TO + " : " + dst.dist().get(TO));
 		 System.out.print("Chemin de " + FROM + " à " + TO + " : ");
 		 String sommet = TO;
-		 Stack<String> pile = new Stack<>();
+		 Stack<String> pile = new Stack<>(	);
 		 while (sommet != null) {
 			 pile.push(sommet);
 			 sommet = dst.pred().get(sommet);
