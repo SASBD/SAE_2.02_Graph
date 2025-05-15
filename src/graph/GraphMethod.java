@@ -11,7 +11,5 @@ public class GraphMethod<T> implements graph.Graph<T>{
         return adj.getOrDefault(s, List.of());
     }
 
-    public Set<T> getSommet() {
-        return adj.keySet();
-    }
+
 }
