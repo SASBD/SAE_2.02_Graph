@@ -31,11 +31,11 @@ Groupe 103
 ## 📌 Remarques
 
 - L’interface `Animator` est utilisée uniquement pour l’animation graphique.
-- Multiples tests réalisés avec le fichier `Djikstra.DijkstraTest.java` ainsi que des tests personnels.
+- Multiples tests réalisés avec le fichier `dijkstra.DijkstraTest.java` ainsi que des tests personnels.
 
 ---
 
 ## 📎 Liens utiles
 
-- 🔗 [Djikstra](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm)
+- 🔗 [dijkstra](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm)
 - 🔗 [Dépôt GitHub](https://github.com/SASBD/SAE_2.02_Graph)

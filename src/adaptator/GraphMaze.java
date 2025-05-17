@@ -1,4 +1,4 @@
-package Adaptator;
+package adaptator;
 
 import graph.Graph;
 import maze.Maze;

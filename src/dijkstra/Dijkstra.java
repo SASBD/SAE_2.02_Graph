@@ -1,4 +1,4 @@
-package Djikstra;
+package dijkstra;
 
 import graph.*;
 
