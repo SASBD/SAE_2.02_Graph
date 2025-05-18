@@ -45,4 +45,5 @@ Application de l’algorithme sur un **labyrinthe non orienté et non pondéré*
 
 - 🔗 [dijkstra](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm)
 - 🔗 [Dépôt GitHub](https://github.com/SASBD/SAE_2.02_Graph)
-- 🔗 [Architecture.pdf] (https://github.com/SASBD/SAE_2.02_Graph/blob/de6e1b4f0e48114ff9fb3b4182977d02b9804882/achitecture.pdf)
+- 📄 [Architecture.pdf](https://github.com/SASBD/SAE_2.02_Graph/raw/master/achitecture.pdf)
+
