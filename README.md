@@ -28,10 +28,15 @@ Application de l’algorithme sur un **labyrinthe non orienté et non pondéré*
 - 👤 Lyna T.
 
 ---
+## 🏆 Achievements
+- Tous les tests fournis fonctionnent ainsi que les labyrinthes.
+- L'adaptateur a été codé
+
+
+---
 
 ## 🚨 Améliorations
 - Des commentaires mieux organisés
-- Tous les tests fonctionnent
 - Commits plus réguliers
 
 ---
@@ -40,3 +45,4 @@ Application de l’algorithme sur un **labyrinthe non orienté et non pondéré*
 
 - 🔗 [dijkstra](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm)
 - 🔗 [Dépôt GitHub](https://github.com/SASBD/SAE_2.02_Graph)
+- 🔗 [Architecture.pdf] (https://github.com/SASBD/SAE_2.02_Graph/blob/de6e1b4f0e48114ff9fb3b4182977d02b9804882/achitecture.pdf)
