@@ -19,19 +19,20 @@ Application de l’algorithme sur un **labyrinthe non orienté et non pondéré*
 ---
 
 ## 👥 Contributeurs
-- Projet en équipe de 3 personnes
-
+- Projet en équipe de 3 personnes du groupe 103
 - 👤 Sofiane B.
+  Partie 1
 - 👤 Nguyen P.
+  Partie 2 et aide sur la transformation de l'algorithme de Dijkstra en code
+  Réalisation du diagrammme UML
 - 👤 Lyna T.
-Groupe 103
 
 ---
 
-## 📌 Remarques
-
-- L’interface `Animator` est utilisée uniquement pour l’animation graphique.
-- Multiples tests réalisés avec le fichier `dijkstra.DijkstraTest.java` ainsi que des tests personnels.
+## 🚨 Améliorations
+- Des commentaires mieux organisés
+- Tous les tests fonctionnent
+- Commits plus réguliers
 
 ---
 
